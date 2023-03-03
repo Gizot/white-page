@@ -1,0 +1,23 @@
+package com.bilgeadam.java.ornek1;
+ 
+import java.util.Scanner;
+ 
+public class Program {
+    
+    public static void main(String[] args) {
+    
+    	        Scanner sc = new Scanner(System.in);
+    	        int countWord = 1;
+    	         
+    	        System.out.print("Cumle giriniz: ");
+    	        String word = sc.nextLine();
+    	 
+    	        for(int i = 0; i < word.length(); i++)
+    	        {
+    	            if(word.charAt(i) == ' ') {
+    	            	countWord++;
+    	            }
+    	        }
+    	        System.out.println(countWord + " tane kelime vardir.");
+    	    }
+    	}
